@@ -65,7 +65,7 @@ class TestBooksCollector:
         collector.delete_book_from_favorites('Убийство на улице Морг')
         assert 'Убийство на улице Морг' not in collector.favorites
 #вывод списка избранного
-    def test_get_list_of_favorites_books_positive(self)
+    def test_get_list_of_favorites_books_positive(self):
         collector = BooksCollector()
         collector.favorites = ['Гордость и предубеждение и зомби', 'Что делать, если ваш кот хочет вас убить']
         assert collector.get_list_of_favorites_books() == ['Гордость и предубеждение и зомби', 'Что делать, если ваш кот хочет вас убить']
